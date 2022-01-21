@@ -66,7 +66,7 @@ python manage.py server
 ## LIVE LINK
 
 ## SCREENSHOTS
-<img href='./screenshots/Screenshot from 2022-01-21 17-26-26.png'>
+<img src='./screenshots/Screenshot from 2022-01-21 17-26-26.png'>
 
 
 
