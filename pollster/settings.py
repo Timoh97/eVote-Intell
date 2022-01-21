@@ -2,6 +2,7 @@
 
 import os
 
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -30,7 +31,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'users.apps.UsersConfig',
     'crispy_forms',
-    'django_cleanup.apps.CleanupConfig',
+    'bootstrap4',
+    
 ]
 
 MIDDLEWARE = [
@@ -69,8 +71,10 @@ WSGI_APPLICATION = 'pollster.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'vote',
+        'USER': 'moringa',
+    'PASSWORD':'12345',
     }
 }
 
